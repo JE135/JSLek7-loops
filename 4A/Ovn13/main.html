@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Age Count</title>
+</head>
+<body>
+
+<script>
+  // Skapa en array med åldrar
+  let aldrar = [25, 12, 22, 15, 32, 44, 11];
+
+  // Använd en while-loop för att räkna antalet personer över 18 år
+  let antalOver18 = 0;
+  let i = 0;
+
+  while (i < aldrar.length) {
+    if (aldrar[i] > 18) {
+      antalOver18++;
+    }
+    i++;
+  }
+
+  // Skriv ut antalet personer över 18 år i konsolen
+  console.log("Antalet personer över 18 år är: " + antalOver18);
+
+  // Skriv ut antalet personer över 18 år i en paragraf-tag i HTML-dokumentet
+  document.write('<p>Antalet personer över 18 år är: ' + antalOver18 + '</p>');
+</script>
+
+</body>
+</html>

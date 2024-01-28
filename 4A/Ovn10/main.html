@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Array Sum</title>
+</head>
+<body>
+
+<script>
+  // 17 random tals Array
+  let numbers = [];
+  for (let i = 0; i < 17; i++) {
+    numbers.push(Math.floor(Math.random() * 100) + 1);
+  }
+
+  // Loopen som räknar
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+
+  // Skriv ut summan i konsolen
+  console.log("Summan av talen är: " + sum);
+
+  // Skriv ut summan i en paragraf-tag i HTML-dokumentet
+  document.write('<p>Summan av talen är: ' + sum + '</p>');
+</script>
+
+</body>
+</html>

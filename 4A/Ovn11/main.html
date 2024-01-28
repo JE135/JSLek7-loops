@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Array Max</title>
+</head>
+<body>
+
+<script>
+  // array med tal
+  let numbers = [5, 12, 8, 20, 3, 15, 10, 7, 25, 18];
+
+  // Hitta det största talet med en while-loop
+  let maxNumber = numbers[0];
+  let i = 1;
+
+  while (i < numbers.length) {
+    if (numbers[i] > maxNumber) {
+      maxNumber = numbers[i];
+    }
+    i++;
+  }
+
+  // Skriv ut det största talet i konsolen
+  console.log("Det största talet är: " + maxNumber);
+
+  // Skriv ut det största talet i en paragraf-tag i HTML-dokumentet
+  document.write('<p>Det största talet är: ' + maxNumber + '</p>');
+</script>
+
+</body>
+</html>

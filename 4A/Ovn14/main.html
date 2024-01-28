@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Min Number</title>
+</head>
+<body>
+
+<script>
+  // Skapa en array med tal
+  let nummerArray = [14, 2, 8, 0.5, 10, 17, 1, 3];
+
+  // Hitta det minsta talet med en for-loop
+  let minNumber = nummerArray[0];
+
+  for (let i = 1; i < nummerArray.length; i++) {
+    if (nummerArray[i] < minNumber) {
+      minNumber = nummerArray[i];
+    }
+  }
+
+  // Skriv ut det minsta talet i konsolen
+  console.log("Det minsta talet är: " + minNumber);
+
+  // Skriv ut det minsta talet i en paragraf-tag i HTML-dokumentet
+  document.write('<p>Det minsta talet är: ' + minNumber + '</p>');
+</script>
+
+</body>
+</html>

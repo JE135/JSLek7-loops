@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Reverse Name</title>
+</head>
+<body>
+
+<script>
+  // Skapa en array med bokstäverna i namnet
+  let nameArray = ['J', 'a', 'n', 'n', 'e', ' ', 'E', 'n', 'g', 'm', 'a', 'n'];
+
+  // Skapa en sträng som är omvänd av namnet med en for-loop
+  let reversedName = '';
+  for (let i = nameArray.length - 1; i >= 0; i--) {
+    reversedName += nameArray[i];
+  }
+
+  // Skriv ut den omvända strängen i konsolen
+  console.log("Det omvända namnet är: " + reversedName);
+
+  // Skriv ut den omvända strängen i en paragraf-tag i HTML-dokumentet
+  document.write('<p>Det omvända namnet är: ' + reversedName + '</p>');
+</script>
+
+</body>
+</html>
